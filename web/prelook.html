@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>预约参观申请-LookSys</title>
+  <style>
+    .dv1{
+      margin: 20px;
+    }
+    input{
+      width: 200px;
+    }
+    label,input,button{
+      padding: 5px;
+      font-size: 20px;
+    }
+    td,th{
+      padding: 8px;
+      border: 1px solid bisque;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <div style="float:left;;width: 35%;text-align: center">
+    <h1>新增预约参观信息</h1>
+    <form action="look_add" method="post">
+      <div class="dv1">
+        <label>姓名：</label>
+        <input name="NAME" placeholder="请输入姓名">
+      </div>
+      <div class="dv1">
+        <label>手机：</label>
+        <input name="phone" placeholder="请输入手机">
+      </div>
+      <div class="dv1">
+        <label>学校：</label>
+        <input name="school" placeholder="请输入学校">
+      </div>
+      <div class="dv1">
+        <label>日期：</label>
+        <input name="vdate" type="date" placeholder="请输入日期">
+      </div>
+      <div class="dv1">
+        <label>申请：</label>
+        <input name="info" placeholder="请输入参观原因">
+      </div>
+      <div class="dv1">
+        <button>新增参观预约申请</button>
+      </div>
+    </form>
+  </div>
+
+  <div style="float: right;width: 65%">
+    <h1>我的预约申请列表</h1>
+    <div>
+      <table>
+        <thead>
+        <tr>
+          <th>序号</th>
+          <th>姓名</th>
+          <th>手机号</th>
+          <th>参观学校</th>
+          <th>参观日期</th>
+          <th>参观原因</th>
+          <th>申请时间</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td>张三</td>
+          <td>11111</td>
+          <td>河南工程学院</td>
+          <td>2024-01-01</td>
+          <td>期待</td>
+          <td>2023-12-28 10:23:21</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

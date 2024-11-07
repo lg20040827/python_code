@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员界面</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .one{
+            font-size: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .two{
+            font-size: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body style="background-image: url('img.jpg');background-size: cover">
+<div style="background-color: #86BEE7" class="box">
+    <h1 style="margin-left: 30px;">管理员操作系统</h1>
+    <hr>
+    <form action="user_list",action="post">
+        <div class="two">
+            <label class="fection" style="margin-left: 70px;">功能选择</label><br>
+            <input style="margin-left: 70px;" type="radio" name="role" value="查询用户" checked>查询用户<br>
+            <input style="margin-left: 70px;" type="radio" name="role" value="查询预约信息：">查询预约信息
+        </div>
+        <div class="one">
+            <input type="submit" class="one">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
